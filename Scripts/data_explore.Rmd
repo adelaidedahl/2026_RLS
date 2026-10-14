@@ -1,0 +1,436 @@
+---
+title: "data_explore"
+output: html_document
+date: "2026-10-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Libarries
+```{r}
+library(tidyverse)
+library(here)
+```
+read files
+```{r}
+# ------ read in survey metadata ------
+survey_meta <- read_csv(here::here("Data", "IMOS_-_National_Reef_Monitoring_Network_Sub-Facility_-_Survey_metadata.csv"), 
+                        skip = 70, #skip the metadata at the top
+                        guess_max = Inf)
+
+# check all method types  - and check that 2 shows up in all the options
+head(unique(survey_meta$methods))
+
+# reduce to only method 2 (the one used for inverts)
+
+#  surveys with a blank or NA methods value (possible in older ATRC data)
+sum(is.na(survey_meta$methods) | survey_meta$methods == "")
+
+#since 40 dont have a method specified we check if they have urchin counts
+blank_m <- survey_meta %>% filter(is.na(methods) | methods == "")
+semi_join(blank_m, raw_Echinometridae, by = "survey_id") %>% nrow()
+
+#none have urchin counts so were dropping them
+##  another 398 have surveys but not including method 2 so those get dropped also - 438 surveys dropped total
+
+m2_surveys <- survey_meta %>%
+  filter(grepl("\\b2\\b", methods)) %>%    # "2" as a whole number, so "12" won't match
+  select(survey_id, site_code, site_name, country, area, location,
+         latitude, longitude, depth, survey_date, program)
+
+
+# ------ read Family = Echinometridae file from invert surveys ------
+
+raw_Echinometridae <- read_csv(here::here("Data", "IMOS_-_National_Reef_Monitoring_Network_Sub-Facility_-_Global_mobile_macroinvertebrate_abundance.csv"),
+                               skip = 70,
+                               guess_max = Inf)
+
+
+# ------ Every survey in your urchin file should appear in the Method 2 list ------
+anti_join(distinct(raw_Echinometridae, survey_id), m2_surveys, by = "survey_id")   # want 0 rows
+
+
+# ------ check that the two files cover the same area and dates ------
+
+range(survey_meta$survey_date);  range(m2_surveys$survey_date)
+setdiff(unique(m2_surveys$country), unique(survey_meta$country))
+#good!
+
+```
+
+Pulling Echinometra data, filling zeroes where applicable
+```{r}
+urchin_echinometra <- raw_Echinometridae %>%
+  mutate(genus = sub(" .*", "", species_name)) %>%   # first word of species_name
+  filter(genus == "Echinometra") %>%
+  group_by(survey_id) %>%
+  summarise(count = sum(total), .groups = "drop") %>%
+  right_join(m2_surveys, by = "survey_id") %>%
+  mutate(taxon = "Echinometra spp.",
+    count = coalesce(count, 0),
+         density_m2 = count / 100) %>%
+  relocate(taxon, .after = survey_id)
+
+colnames(urchin_echinometra)
+```
+
+# Map test
+code written primarily by Claude, edited by me
+
+```{r}
+# ---- Packages ---------------------------------------------------------------
+library(dplyr)
+library(ggplot2)
+library(leaflet)    # interactive map
+library(leafpop)    # puts ggplot objects into leaflet popups
+library(lubridate)  # year()
+
+theme_set(theme_classic(base_size = 15))   # background for every ggplot below
+
+
+# ---- 1. Add a year column ---------------------------------------------------
+# survey_date is already a Date (read_csv parsed it), so year() just pulls out the year.
+echin <- urchin_echinometra %>%
+  mutate(year = year(survey_date))
+
+
+# ---- 2. One row per location for the map ------------------------------------
+# Colour = "average density across years":
+#   first average all surveys within each location-year,
+#   then average those yearly means.
+# That way a year with 40 surveys doesn't outweigh a year with 5.
+loc_summary <- echin %>%
+  group_by(area, country, year) %>%
+  summarise(year_mean = mean(density_m2), .groups = "drop") %>%
+  group_by(area, country) %>%
+  summarise(mean_density = mean(year_mean),
+            n_years      = n(),
+            .groups = "drop") %>%
+  # Point position = center of that location's sites
+  left_join(
+    echin %>%
+      distinct(area, site_code, latitude, longitude) %>%
+      group_by(area) %>%
+      summarise(lat = mean(latitude), lon = mean(longitude),
+                n_sites = n(), .groups = "drop"),
+    by = "area"
+  ) %>%
+  arrange(area)   # fixed order: plots in step 3 are built in this same order
+
+nrow(loc_summary)     # number of points (and plots) you'll get
+
+
+# ---- 3. Boxplot for each location -------------------------------------------
+# Writes one plot for a location; called once per location below.
+make_loc_plot <- function(loc) {
+  d <- filter(echin, area == loc)
+
+  ggplot(d, aes(x = factor(year), y = density_m2)) +        # factor() = one box per year
+    geom_boxplot(outlier.shape = NA) +                       # hide box outliers; the jitter
+                                                             # already shows every point
+    geom_jitter(width = 0.3, height = 0,                     # height = 0: only spread
+                size = 2.5, alpha = 0.7) +                   # sideways, so densities (and
+                                                             # zeros) stay at their true value
+    labs(title    = loc,
+         subtitle = paste0(unique(d$country), " | ",
+                           n_distinct(d$site_code), " sites, ",
+                           nrow(d), " surveys"),
+         x = "Year",
+         y = expression(italic(Echinometra)~"density (ind. m"^-2*")")) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))   # stops year labels overlapping
+}
+
+# One plot per area, in the same order as loc_summary's rows.
+# This can take a minute or two with hundreds of locations.
+loc_plots <- lapply(loc_summary$area, make_loc_plot)
+
+# Check one before building the map:
+loc_plots[[1]]
+
+
+# ---- 4. Colour scale ---------------------------------------------------------
+# Densities are heavily skewed with many exact zeros, so a smooth scale would make
+# almost everything one colour. Fixed bins keep the variation visible.
+# The first bin [0, 0.001) holds only the true zeros.
+dens_bins <- c(0, 0.001, 0.05, 0.1, 0.25, 0.5, 1, 2, Inf)
+dens_labs <- c("0", "< 0.05", "0.05–0.1", "0.1–0.25", "0.25–0.5",
+               "0.5–1", "1–2", "> 2")
+
+pal <- colorBin(
+  palette = viridisLite::mako(8, begin = 0.1, end = 0.95),  # 8 colours from the Mako palette
+  domain  = loc_summary$mean_density,
+  bins    = dens_bins,
+  right   = FALSE,
+  reverse = TRUE        # flips the scale: low densities light, high densities dark
+)
+
+
+# ---- 5. Map ------------------------------------------------------------------
+echin_map <- leaflet(loc_summary) %>%
+  addProviderTiles(providers$Esri.OceanBasemap)  %>%     # plain light basemap
+  addCircleMarkers(
+    lng = ~lon, lat = ~lat,
+    radius = 6, stroke = TRUE, color = "grey30", weight = 0.5,  # thin outline so pale
+    fillColor = ~pal(mean_density), fillOpacity = 0.9,          # colours stay visible
+    label = ~paste0(area, ": ", round(mean_density, 3), " ind/m²"),  # on hover
+    popup = popupGraph(loc_plots, width = 550, height = 400),           # on click
+    popupOptions = popupOptions(maxWidth = 600)
+  ) %>%
+  addLegend("bottomright",
+            colors = pal(dens_bins[-length(dens_bins)]),  # colour at the bottom of each bin
+            labels = dens_labs,
+            title  = "Mean <i>Echinometra</i><br>density (ind/m²)",
+            opacity = 0.9)
+
+echin_map   # opens in the RStudio Viewer
+```
+
+## by island (attempted)
+
+```{r}
+# =============================================================================
+# Echinometra density from NRMN / Reef Life Survey Method 2 surveys
+# Data prep (with zeros), island-level site grouping, and an interactive map
+# =============================================================================
+
+
+# ---- 0. Packages and plot theme ---------------------------------------------
+library(here)       # file paths relative to the RStudio project
+library(readr)      # read_csv()
+library(dplyr)      # data wrangling
+library(tidyr)      # complete() (only needed if you go back to per-species)
+library(lubridate)  # year()
+library(ggplot2)    # boxplots
+library(geosphere)  # great-circle distances between sites
+library(leaflet)    # interactive map
+library(leafpop)    # ggplot popups on leaflet points
+
+theme_set(theme_classic(base_size = 15))   # background for every ggplot below
+
+
+# ---- 1. Read the data -------------------------------------------------------
+# Both files start with 70 "#" metadata lines and a blank line; the header is line 72.
+# skip = 70 works whether or not readr counts the blank line.
+# guess_max = Inf: guess column types from ALL rows. survey_latitude/longitude are
+# empty for the first ~2,500 rows and would otherwise be read as logical (all NA).
+# Don't use comment = "#": site names like "Ribbon Reef #2" would be cut off.
+
+survey_meta <- read_csv(
+  here("Data", "IMOS_-_National_Reef_Monitoring_Network_Sub-Facility_-_Survey_metadata.csv"),
+  skip = 70, guess_max = Inf)
+
+raw_Echinometridae <- read_csv(
+  here("Data", "IMOS_-_National_Reef_Monitoring_Network_Sub-Facility_-_Global_mobile_macroinvertebrate_abundance.csv"),
+  skip = 70, guess_max = Inf)
+
+dim(survey_meta)          # expect 36974 x 28
+dim(raw_Echinometridae)   # expect 28419 x 30
+
+
+# ---- 2. Method 2 survey list ------------------------------------------------
+# Method 2 = mobile invertebrate count: 1 m either side of a 50 m line,
+# 2 blocks x 50 m^2 = 100 m^2 per survey.
+# "\\b2\\b" matches 2 as a whole number, so "12" doesn't count.
+# Drops 438 surveys: 40 with a blank `methods` and 398 that didn't use Method 2.
+
+m2_surveys <- survey_meta %>%
+  filter(grepl("\\b2\\b", methods)) %>%
+  select(survey_id, site_code, site_name, country, area, location,
+         latitude, longitude, depth, survey_date, program)
+
+# Check: every survey with urchin counts should be in the Method 2 list (want 0 rows)
+anti_join(distinct(raw_Echinometridae, survey_id), m2_surveys, by = "survey_id")
+
+
+# ---- 3. Echinometra count per survey, with zeros ----------------------------
+# The abundance file has rows only where urchins were seen, so zeros are added by
+# joining to the full Method 2 survey list.
+
+urchin_echinometra <- raw_Echinometridae %>%
+  mutate(genus = sub(" .*", "", species_name)) %>%   # genus = first word of species_name
+  filter(genus == "Echinometra") %>%                 # filter BEFORE the join so surveys
+                                                     # with only other genera get 0
+  group_by(survey_id) %>%
+  summarise(count           = sum(total),            # sum over blocks, size classes, species
+            species_present = paste(sort(unique(species_name)), collapse = "; "),
+            .groups = "drop") %>%
+  right_join(m2_surveys, by = "survey_id") %>%       # keep every Method 2 survey
+  mutate(taxon           = "Echinometra spp.",       # added after the join so zero rows get it too
+         count           = coalesce(count, 0),       # no Echinometra record -> 0
+         species_present = coalesce(species_present, "none"),
+         density_m2      = count / 100) %>%          # individuals per m^2
+  relocate(taxon, species_present, .after = survey_id)
+
+nrow(urchin_echinometra) == nrow(m2_surveys)   # expect TRUE
+
+
+# ---- 4. Add year ------------------------------------------------------------
+echin <- urchin_echinometra %>%
+  mutate(year = year(survey_date))
+
+
+# ---- 5. Group sites into island-level units ---------------------------------
+# `location` is too broad and sometimes wrong (e.g. Tuamotu atolls labelled
+# "Society Islands"), so sites within h_km of each other are grouped by distance.
+#
+# lon_cut moves the map's left/right edge into the Atlantic so the Pacific sits in
+# the middle. Longitudes west of lon_cut get +360 (e.g. Hawaii -157 -> 203,
+# Caribbean -80 -> 280). That's only used for map positions, not for distances.
+
+h_km    <- 20    # max width of a group in km. Raise if islands split, lower if they merge
+lon_cut <- -20   # map edge (degrees). -20 runs between West Africa and the Caribbean
+
+# 5a. One row per site
+sites <- echin %>%
+  filter(!is.na(latitude), !is.na(longitude)) %>%   # distances fail on missing coordinates
+  group_by(country, site_code) %>%
+  summarise(site_name = first(site_name),
+            location  = first(location),
+            latitude  = mean(latitude),             # SITE coordinates, not survey_lat/lon or
+            longitude = mean(longitude),            # geom (those can be far off, e.g. FP3)
+            n_surveys = n(),
+            .groups = "drop")
+
+count(sites, site_code) %>% filter(n > 1)   # check: site_code in one country only (want 0 rows)
+
+# 5b. Group sites by distance, one country at a time
+cluster_sites <- function(d, h_km) {
+  if (nrow(d) == 1) return(mutate(d, cl = 1L))              # a lone site is its own group
+  dm <- distm(d[, c("longitude", "latitude")]) / 1000       # distances between sites, km
+  hc <- hclust(as.dist(dm), method = "complete")            # "complete": no two sites in a
+                                                            # group are more than h_km apart
+  mutate(d, cl = cutree(hc, h = h_km))
+}
+
+sites <- sites %>%
+  group_by(country) %>%                         # per country: smaller calculations,
+  group_modify(~ cluster_sites(.x, h_km)) %>%   # and no groups crossing borders
+  ungroup() %>%
+  mutate(island_id = paste(country, cl, sep = "_"),
+         lon_map   = ifelse(longitude < lon_cut, longitude + 360, longitude))  # map position
+
+# 5c. Name each group after its most-surveyed site; centre point for the map
+island_names <- sites %>%
+  group_by(island_id) %>%
+  summarise(island_name = paste0(location[which.max(n_surveys)], ": ",
+                                 site_name[which.max(n_surveys)], " area"),
+            lat     = mean(latitude),
+            lon     = mean(lon_map),   # average the shifted longitudes so groups near
+                                       # 180 degrees don't average to the wrong side
+            n_sites = n(),
+            .groups = "drop")
+
+# 5d. Add the group to every survey
+echin <- echin %>%
+  left_join(select(sites, site_code, island_id), by = "site_code") %>%
+  left_join(select(island_names, island_id, island_name), by = "island_id") %>%
+  filter(!is.na(island_id))   # drops surveys at sites with no coordinates (should be few)
+
+
+# ---- 5e. (Optional) Check the grouping on a map -----------------------------
+# Colour each site by its group and hover to see names. Change h_km and rerun
+# section 5 until the islands you know look right.
+grp_pal <- colorFactor(rainbow(50), domain = sites$island_id)   # colours repeat; fine for checking
+
+leaflet(sites) %>%
+  addProviderTiles(providers$Esri.WorldGrayCanvas) %>%
+  addCircleMarkers(~lon_map, ~latitude, radius = 5, stroke = FALSE, fillOpacity = 0.9,
+                   color = ~grp_pal(island_id),
+                   label = ~paste(site_name, "|", island_id))
+
+
+# ---- 6. One row per island group for the map --------------------------------
+# Colour = mean density across years: average the surveys in each year first,
+# then average those yearly means, so heavily surveyed years don't dominate.
+
+loc_summary <- echin %>%
+  group_by(island_id, island_name, country, year) %>%
+  summarise(year_mean = mean(density_m2), .groups = "drop") %>%
+  group_by(island_id, island_name, country) %>%
+  summarise(mean_density = mean(year_mean),
+            n_years      = n(),
+            .groups = "drop") %>%
+  left_join(select(island_names, island_id, lat, lon, n_sites), by = "island_id") %>%
+  arrange(island_id)   # fixed order: plots in section 7 must match these rows
+
+nrow(loc_summary)      # number of map points (and popup plots)
+
+
+# ---- 7. Boxplot for each island group ---------------------------------------
+# x = year, one box per year; each jittered point is one survey.
+
+make_loc_plot <- function(id) {
+  d <- filter(echin, island_id == id)
+
+  ggplot(d, aes(x = factor(year), y = density_m2)) +
+    geom_boxplot(outlier.shape = NA) +              # hide outliers; the jitter shows every point
+    geom_jitter(width = 0.3, height = 0,            # height = 0: sideways only, so values
+                size = 2.5, alpha = 0.7) +          # (including zeros) stay where they are
+    labs(title    = unique(d$island_name),
+         subtitle = paste0(unique(d$country), " | ",
+                           n_distinct(d$site_code), " sites, ",
+                           nrow(d), " surveys"),
+         x = "Year",
+         y = expression(italic(Echinometra)~"density (ind. m"^-2*")")) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))   # stops year labels overlapping
+}
+
+# Test on a few first: lapply(head(loc_summary$island_id, 3), make_loc_plot)
+loc_plots <- lapply(loc_summary$island_id, make_loc_plot)   # can take a few minutes
+
+
+# ---- 8. Colour scale (Mako, reversed, binned) -------------------------------
+# Densities are skewed with many exact zeros, so fixed bins show more variation
+# than a smooth scale. The first bin [0, 0.001) holds only true zeros.
+
+dens_bins <- c(0, 0.001, 0.05, 0.1, 0.25, 0.5, 1, 2, Inf)
+dens_labs <- c("0", "< 0.05", "0.05–0.1", "0.1–0.25", "0.25–0.5",
+               "0.5–1", "1–2", "> 2")
+
+pal <- colorBin(
+  palette = viridisLite::mako(8, begin = 0.1, end = 0.95),  # trim Mako's near-black and
+  domain  = loc_summary$mean_density,                       # near-white ends
+  bins    = dens_bins,
+  right   = FALSE,       # bins are [low, high)
+  reverse = TRUE)        # low = light, high = dark. Raise `begin` if zeros are too pale
+
+
+# ---- 9. Map (Pacific-centred, no endless side-scrolling) --------------------
+echin_map2 <- leaflet(
+    loc_summary,
+    options = leafletOptions(minZoom = 2,               # can't zoom out past one world
+                             maxBoundsViscosity = 1,    # hard stop at the edges
+                             worldCopyJump = FALSE)) %>%
+  addProviderTiles(providers$Esri.OceanBasemap,    group = "Ocean") %>%   # no API key
+  addProviderTiles(providers$Esri.WorldGrayCanvas, group = "Grey") %>%    # needed for either
+  setView(lng = 180, lat = 0, zoom = 2) %>%                          # opens on the Pacific
+  setMaxBounds(lng1 = lon_cut,       lat1 = -75,                     # one 360-degree strip
+               lng2 = lon_cut + 360, lat2 = 80) %>%                  # from lon_cut to lon_cut + 360
+  addCircleMarkers(
+    lng = ~lon, lat = ~lat,                                  # lon is already shifted
+    radius = 6, stroke = TRUE, color = "grey30", weight = 0.5,
+    fillColor = ~pal(mean_density), fillOpacity = 0.9,
+    label = ~paste0(island_name, ": ", round(mean_density, 3), " ind/m²"),  # on hover
+    popup = popupGraph(loc_plots, width = 550, height = 400),               # on click
+    popupOptions = popupOptions(maxWidth = 600)) %>%
+  addLegend("bottomright",
+            colors  = pal(dens_bins[-length(dens_bins)]),   # one colour per bin
+            labels  = dens_labs,
+            title   = "Mean <i>Echinometra</i><br>density (ind/m²)",
+            opacity = 0.9) %>%
+  addLayersControl(baseGroups = c("Ocean", "Grey"),         # basemap switcher
+                   options = layersControlOptions(collapsed = TRUE))
+
+echin_map2
+
+
+# ---- 10. Save as a standalone HTML file -------------------------------------
+# Open the saved file and click a few points to check the popups came along.
+# If they don't, try popupGraph(..., type = "svg") in section 9.
+#htmlwidgets::saveWidget(echin_map, here("echinometra_map.html"), selfcontained = TRUE)
+```
+
+

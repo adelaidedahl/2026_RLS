@@ -1,0 +1,620 @@
+island_id,island_name,country,mean_density,n_years,lat,lon,n_sites
+American Samoa_1,American Samoa: Ofu Harbour entrance S area,American Samoa,6.25e-4,1,-14.16625,190.31625,8
+American Samoa_2,American Samoa: Rose Atoll entrance area,American Samoa,0.010000000000000002,1,-14.53875,191.84125,8
+American Samoa_3,American Samoa: Pago Pago Harbour east area,American Samoa,0,1,-14.28,189.33,2
+Australia_1,Byron: Anemone mooring Julien Rocks area,Australia,0,2,-28.62,153.62333333333333,3
+Australia_10,Coral Sea - Central: Tregosse Reef area,Australia,0.058333333333333334,2,-17.7725,150.6325,4
+Australia_100,GBR - South: Swains SE area,Australia,0.001875,4,-22.37,152.54500000000002,2
+Australia_101,GBR - South: Dustys Haven area,Australia,0.03666666666666666,2,-21.432,151.56,5
+Australia_102,GBR - South: Birdseye Reef area,Australia,0.005,1,-21.07,150.46,1
+Australia_103,GBR - South: Swains Gullet Bommie area,Australia,0,1,-21.16,151.75,1
+Australia_104,GBR - South: North Twin Cays area,Australia,0,1,-21.21,151.98,1
+Australia_105,GBR - South: Swains Halfway Reef area,Australia,0,1,-21.21,152.24,2
+Australia_106,GBR - South: Epaulette Reef area,Australia,0,1,-21.18,152.54,1
+Australia_107,GBR - South: Elusive Reef Bommie area,Australia,0,1,-21.125,152.765,2
+Australia_108,QLD inshore - Central: Pelorus and Orpheus Islands West1 area,Australia,0,2,-18.618,146.492,5
+Australia_109,GBR - South: Ella's Haven area,Australia,0,2,-21.475,151.19,2
+Australia_11,Coral Sea - Central: Abington Reef Dark Gutter area,Australia,0.01517857142857143,2,-18.076666666666668,149.61833333333334,6
+Australia_110,GBR - South: Swains Eastern Garden area,Australia,0,1,-21.545,152.39,2
+Australia_111,Capricorn-Bunker: OTI01 - Far left reef area,Australia,6.410256410256414e-4,3,-23.496153846153845,152.0726923076923,26
+Australia_112,GBR - Central: Ribbon Reef #2 area,Australia,0.0024999999999999996,1,-15.58,145.79,2
+Australia_113,GBR - Central: Ribbon Reef #5 South Satellite area,Australia,0,1,-15.3225,145.75,4
+Australia_114,GBR - North: Tydeman Cay anchorage area,Australia,0.005904761904761905,3,-13.9725,144.51749999999998,4
+Australia_115,QLD inshore - Central: Wentworth Reef area,Australia,0,4,-16.44,145.55599999999998,5
+Australia_116,GBR - North: Cod Hole area,Australia,0,3,-14.66,145.66,1
+Australia_117,GBR - North: Crocodile Bommie area,Australia,0.00475,4,-13.913333333333334,144.35,3
+Australia_118,GBR - North: Salamander Reef area,Australia,0,4,-11.765,143.65,2
+Australia_119,GBR - North: Two Hour Reef area,Australia,0,2,-12.1,143.65,3
+Australia_12,Coral Sea - Central: South Flinders Horseshoe centre area,Australia,0.03777777777777778,3,-17.852,148.492,5
+Australia_120,GBR - North: Lagoon Reef Outer NW area,Australia,0.0038888888888888883,3,-12.38,143.76333333333332,3
+Australia_121,QLD inshore - North: Burke Reef area,Australia,0,2,-12.63,143.58,2
+Australia_122,GBR - North: Shark Reef Gardens area,Australia,0.004722222222222222,3,-12.875,143.82,2
+Australia_123,GBR - North: Cat Reef Bommie area,Australia,0,1,-12,143.84,1
+Australia_124,GBR - North: Surprise Reef area,Australia,0.0044444444444444444,3,-14,144.69,3
+Australia_125,GBR - North: Day Reef Inner area,Australia,0.004166666666666667,3,-14.506666666666666,145.53333333333333,3
+Australia_126,GBR - Central: Chinamans Reef NW area,Australia,0.0037499999999999994,2,-16.21,145.785,2
+Australia_127,QLD inshore - North: Womer Cay area,Australia,0.0024999999999999996,2,-10.79,142.97,2
+Australia_128,QLD inshore - North: Sinclair Is Sth area,Australia,0.0016666666666666666,1,-11.113333333333333,143.02,3
+Australia_129,GBR - North: Collette Reef area,Australia,0,1,-11.23,143.35500000000002,2
+Australia_13,Coral Sea - Central: Flinders Ribbon Reef South Cay area,Australia,0.09275,4,-17.712,148.448,5
+Australia_130,GBR - North: Pandora Passage area,Australia,0,1,-11.37,143.99,1
+Australia_131,GBR - North: Boxing Day test area,Australia,0,1,-11.49,143.85,2
+Australia_132,GBR - North: Reticulatus Reef area,Australia,0.01,1,-13.18,143.84,1
+Australia_133,Carpentaria: Lamatha Reef area,Australia,0,1,-16.48,139.27,1
+Australia_134,Carpentaria: Foggy Bottom area,Australia,0,1,-16.07,138.91,1
+Australia_135,Carpentaria: Chinamans Reef area,Australia,0.015,1,-15.89,139.03,1
+Australia_136,Carpentaria: Carpentaria Reef SW area,Australia,0,1,-15.485,140.15,2
+Australia_137,West Cape York: Carpentaria Shoal area,Australia,0,4,-10.74,141.055,2
+Australia_138,West Cape York: Proudfoot Shoal area,Australia,0,2,-10.53,141.47,1
+Australia_139,West Cape York: Merkara Shoal N area,Australia,0,4,-10.5,141.23,2
+Australia_14,Coral Sea - Central: Chilcott Islet bommie area,Australia,0.004375,4,-16.9375,149.98333333333335,12
+Australia_140,Carpentaria: Steves Bommie area,Australia,0.0012499999999999998,2,-16.355,139.445,2
+Australia_141,Carpentaria: Mandalbi-Bellaleea area,Australia,0,2,-16.36,139.612,5
+Australia_142,Carpentaria: Manowar Island area,Australia,0,2,-16.23,139.25,1
+Australia_143,Encounter: Horseshoe inner area,Australia,0,12,-35.10181818181818,138.47454545454545,11
+Australia_144,Yorke Peninsula: Edithburgh area,Australia,0,5,-35.05,137.755,4
+Australia_145,Adelaide: Semaphore area,Australia,0,8,-34.82,138.45999999999998,2
+Australia_146,Adelaide: Port Gawler area,Australia,0,5,-34.62,138.31,1
+Australia_147,Adelaide: Broken Bottom area,Australia,0,9,-34.97666666666667,138.45999999999998,3
+Australia_148,Adelaide: Port Parham area,Australia,0,7,-34.44,138.2,1
+Australia_149,Yorke Peninsula: Port Julia area,Australia,0,2,-34.66,137.89,1
+Australia_15,Coral Sea - Central: Magdelaine Cay SW area,Australia,0.006111111111111112,3,-16.56375,150.30375,8
+Australia_150,Jervis Bay: The Docks 1 The Gulch area,Australia,1.738277166372049e-4,26,-35.08544117647059,150.76117647058823,68
+Australia_151,Jurien: Fishermans Island area,Australia,2.4801587301587306e-4,14,-30.178461538461537,114.97461538461538,13
+Australia_152,Jurien: Escape Island area,Australia,0,15,-30.31714285714286,114.99285714285715,7
+Australia_153,Jurien: Gazely Reef area,Australia,0,13,-30.654545454545456,115.10363636363637,11
+Australia_154,Jurien: Flat Rock Reef area,Australia,0,12,-30.77166666666667,115.16666666666667,6
+Australia_155,Jurien: Outer Rocks (North) 2 area,Australia,1.5306122448979594e-4,14,-30.45375,115.0125,8
+Australia_156,Lord Howe Island: Old Gulch area,Australia,0.03878963147039368,12,-31.53075,159.06125,40
+Australia_157,Lord Howe Island: Wheatsheaf area,Australia,1.5151515151515152e-4,11,-31.774,159.262,5
+Australia_158,Moreton: Shag Rock area,Australia,1.527060606060606,4,-27.4,153.50666666666666,6
+Australia_159,Moreton: Goat Island S.E. area,Australia,0,1,-27.503333333333334,153.37666666666667,3
+Australia_16,Coral Sea - Central: South Willis islet south area,Australia,0.011805555555555555,3,-16.295,149.96,4
+Australia_160,Marmion: Marmion Angling & Aquatic Club area,Australia,0.0011458333333333333,8,-31.822,115.73333333333333,15
+Australia_161,SA - Western: D'Entrecasteaux Reef area,Australia,0,1,-31.97,131.93,1
+Australia_162,SA - Western: Lacy Island area,Australia,0,2,-32.366,133.452,5
+Australia_163,SA - Western: Petrel Cove East area,Australia,0,3,-32.50333333333334,133.30333333333334,9
+Australia_164,SA - Western: West Franklin Island North West area,Australia,0,1,-32.445,133.64999999999998,2
+Australia_165,"Ngari Capes: Cape Naturalist East, 10m area",Australia,0,7,-33.586470588235294,115.01294117647059,17
+Australia_166,Ngari Capes: Cosy Corner Outer area,Australia,0,5,-34.31,115.07285714285715,7
+Australia_167,Ngari Capes: Cape Freycinet area,Australia,0,4,-34.06333333333333,114.98666666666666,3
+Australia_168,Norfolk Island: Slaughterhouse Bay area,Australia,0.0026585410557184758,5,-29.05,167.94857142857143,21
+Australia_169,Exmouth: Bundegi RZ area,Australia,0.0016458333333333336,10,-21.85142857142857,114.17142857142858,7
+Australia_17,Coral Sea - Central: Holmes South Cay Inner Reef area,Australia,0.008321428571428572,4,-16.5,147.84444444444443,9
+Australia_170,Ningaloo Reef: Monck Head area,Australia,0.6596369306574862,12,-23.164,113.75840000000001,25
+Australia_171,Ningaloo Reef: Pelican Nth area,Australia,0.07666666666666667,10,-23.323333333333334,113.78,3
+Australia_172,Ningaloo Reef: Dugong area,Australia,0.3105833333333333,10,-22.9,113.77000000000001,2
+Australia_173,Ningaloo Reef - North: A & D s Dilemma area,Australia,0.095,2,-21.92,113.95571428571428,7
+Australia_174,Exmouth: North Muiron Island NE area,Australia,0.06294444444444444,5,-21.65625,114.355,8
+Australia_175,Ningaloo Reef: Oyster rocks buoy area,Australia,8.095238095238096e-4,10,-23.045,113.82,2
+Australia_176,Ningaloo Reef - North: Turquoise Bay (Sanctuary zone) area,Australia,0.009999999999999998,3,-22.1,113.88,1
+Australia_177,Ningaloo Reef - North: Yardie Creek South area,Australia,0,1,-22.36,113.78,1
+Australia_178,Upper Spencer Gulf: Black Point area,Australia,0,2,-32.988,137.758,10
+Australia_179,Upper Spencer Gulf: Point Riley area,Australia,0,4,-33.917500000000004,137.6025,4
+Australia_18,Coral Sea - North: Inner Osprey East area,Australia,0.0030285714285714286,5,-13.861818181818181,146.57363636363635,11
+Australia_180,Upper Spencer Gulf: Bokos Reef area,Australia,0,1,-33.745,137.08499999999998,2
+Australia_181,NSW - South: Bushranger Bay Bass Point area,Australia,0,5,-34.59666666666667,150.89666666666668,3
+Australia_182,NSW - Central: Terrigal Haven area,Australia,0,9,-33.5,151.42,3
+Australia_183,NSW - Central: Moon Island West area,Australia,0,3,-33.087500000000006,151.65875,8
+Australia_184,Port Stephens - North: South One Mile area,Australia,0,3,-32.165,152.55,8
+Australia_185,Port Stephens - North: Status Rock mid-west side area,Australia,0,3,-32.44285714285714,152.54,7
+Australia_186,Port Stephens - North: Graveyard area,Australia,0,2,-32.31,152.54666666666668,3
+Australia_187,NSW - North: The Maze area,Australia,0,1,-31.583333333333332,152.85666666666665,3
+Australia_188,NSW - Central North: Nambucca Heads RSL area,Australia,0,1,-30.65,153,1
+Australia_189,Tweed Heads: Seascape area Tweed River area,Australia,0,2,-28.165,153.54000000000002,2
+Australia_19,Coral Sea - Central: Turtle Marathon area,Australia,0.06979166666666667,3,-17.1175,151.9425,8
+Australia_190,Wessel: Truant Island N area,Australia,0.01261904761904762,4,-11.6475,136.86375,8
+Australia_191,Wessel: Burston Bay area,Australia,0.060000000000000005,1,-11.225000000000001,136.69,2
+Australia_192,Darwin: Old Man Rock area,Australia,0,1,-12.325,130.86,2
+Australia_193,Darwin: East Point Coral Gardens area,Australia,0,5,-12.45875,130.8075,8
+Australia_194,Arafura: Money Shoal NW area,Australia,0,5,-10.325,132.71,4
+Australia_195,Arafura: Bramble Rocks area,Australia,0,1,-10.89,132.78,1
+Australia_196,Arafura: New Year Island anchorage area,Australia,0,3,-10.925714285714285,133.06571428571428,7
+Australia_197,Arnhem: Arnhem CMR Gadgets Reef North West area,Australia,0,4,-11.295,133.8,2
+Australia_198,Arnhem: Arnham Shoal area,Australia,0,1,-11.45,133.71,1
+Australia_199,Arnhem: Paxie Shoal West area,Australia,0,3,-11.434999999999999,134.135,2
+Australia_2,Cod Grounds: Cod Grounds Pinnacles area,Australia,0,4,-31.6975,152.89416666666668,12
+Australia_20,Coral Sea - North: Bougainville Reef W central area,Australia,0.0016111111111111111,3,-15.485,147.1,6
+Australia_200,Wessel: Warrnga Reef area,Australia,0,2,-11.94,135.6,1
+Australia_201,Wessel: Guluwuru Island NE area,Australia,0,1,-11.55,136.42,1
+Australia_202,Carpentaria: East Bremer Islet bay area,Australia,0.13170454545454546,2,-12.09,136.84833333333333,6
+Australia_203,Carpentaria: Bonner Rocks NE area,Australia,0.0025,3,-12.06,136.61,2
+Australia_204,Carpentaria: Dudley Island SE area,Australia,0.08583333333333333,2,-12.883333333333335,136.72333333333333,3
+Australia_205,Carpentaria: Brady Rock area,Australia,0,1,-13.68,136.45,1
+Australia_206,Carpentaria: Cape Beatrice SW area,Australia,0.205,1,-14.33,136.9175,4
+Australia_207,Carpentaria: Groper Shoal area,Australia,0,1,-15.47,137.92,1
+Australia_208,Carpentaria: Jones Shoal area,Australia,0,1,-10.96,132.225,2
+Australia_209,Carpentaria: Arafura Shoal area,Australia,0,2,-11.23,134.75,1
+Australia_21,Coral Sea - North: Osprey Reef Lagoon South area,Australia,0.001,4,-13.98,146.682,5
+Australia_210,Wessel: Sargassum Reef area,Australia,0,1,-11.47,136.18,2
+Australia_211,Ashmore/Cartier: Vulcan Shoal area,Australia,0,2,-12.8,124.27,1
+Australia_212,Ashmore/Cartier: Hibernia Lagoon NW area,Australia,0.016727272727272726,3,-11.974545454545455,123.35636363636364,11
+Australia_213,Rowley Shoals: Clerke Reef - BnB area,Australia,0.019811111111111116,3,-17.292,119.366,20
+Australia_214,Pilbara: Bedout reef edge area,Australia,0,2,-19.584,119.11,5
+Australia_215,Pilbara: Old 9 Buoy Reef area,Australia,0,3,-20.25,118.505,2
+Australia_216,Pilbara: Hedland 2 area,Australia,0,2,-20.075000000000003,118.425,2
+Australia_217,Pilbara: Geographe Shoals N area,Australia,0,1,-20.255000000000003,117.895,2
+Australia_218,Pilbara: Delambre Inner 1 area,Australia,0,1,-20.433333333333334,117.08666666666666,3
+Australia_219,Pilbara: Legendre Inside 3 area,Australia,0,1,-20.39,116.88666666666667,3
+Australia_22,Coral Sea - Far North: Ashmore reef lagoon South area,Australia,0.016310064935064938,5,-10.411111111111111,144.4711111111111,9
+Australia_220,Pilbara: Malus Is area,Australia,0.05791666666666666,4,-20.51375,116.61,8
+Australia_221,Pilbara: Dead Tree Beach area,Australia,0.013625000000000003,4,-20.581333333333333,116.52866666666667,15
+Australia_222,Pilbara: Montebellos East Rock area,Australia,4.700854700854701e-4,2,-20.432857142857145,115.53785714285715,14
+Australia_223,Ashmore/Cartier: Surge Crest East area,Australia,7.915376676986586e-4,5,-12.215652173913044,123.01782608695652,23
+Australia_224,Pilbara: Varanus North bommie area,Australia,0,2,-20.5825,115.57499999999999,4
+Australia_225,Pilbara: North Cormorant Island area,Australia,0,2,-20.77,115.518,5
+Australia_226,Pilbara: Barrow south reef area,Australia,0,1,-20.946666666666665,115.46333333333334,3
+Australia_227,Pilbara: Barrow Shelf area,Australia,0,2,-21.08,115.51,1
+Australia_228,Pilbara: Airlie island area,Australia,0,2,-21.32,115.17,2
+Australia_229,Exmouth: Bundegi Sponge Garden area,Australia,0,1,-21.990000000000002,114.14,4
+Australia_23,Coral Sea - South: Cato Bommies area,Australia,1.171888888888889,3,-23.246,155.551,10
+Australia_230,Kimberley: Berthier Island area,Australia,0,1,-14.5,125,1
+Australia_231,Kimberley: White Island bommie area,Australia,0,1,-15.07,124.33,1
+Australia_232,Kimberley: Brue Reef North East area,Australia,0,1,-15.92,123.045,2
+Australia_233,Kimberley: Frost Shoal area,Australia,0,1,-15.78,123.36,1
+Australia_234,Kimberley: Churchill Reef South East area,Australia,0,1,-15.485,123.2475,4
+Australia_235,Scott & Seringapatam Reefs: Election Day Reef area,Australia,0.044343434343434344,3,-14.100909090909092,121.9590909090909,11
+Australia_236,Scott & Seringapatam Reefs: North Scott Lagoon area,Australia,0.02625,2,-13.925,121.905,2
+Australia_237,Scott & Seringapatam Reefs: Shackle Reef area,Australia,0.10388888888888889,3,-13.623333333333333,122.00666666666666,3
+Australia_238,Ashmore/Cartier: Cartier Garden area,Australia,0.010476190476190476,3,-12.529,123.569,10
+Australia_239,Scott & Seringapatam Reefs: Browse Ledge area,Australia,0.03666666666666667,1,-14.103333333333333,123.55333333333333,3
+Australia_24,Coral Sea - Far North: Boot Reef Lagoon W area,Australia,4.1666666666666664e-4,4,-10.022,144.689,10
+Australia_240,Kimberley: Groper Reef area,Australia,0,1,-14.06,125.36,2
+Australia_241,Kimberley: Cassini Point area,Australia,0,1,-13.94,125.64,2
+Australia_242,Ashmore/Cartier: Barracouta Shoal area,Australia,0,2,-12.56,124.04,1
+Australia_243,Kimberley: Lesueur Island South area,Australia,0,2,-13.82,127.27,1
+Australia_244,Ashmore/Cartier: Seringapatam Lagoon Bommie area,Australia,0.23625000000000002,1,-20.27,115.36500000000001,4
+Australia_245,Scott & Seringapatam Reefs: Fungiid Fields area,Australia,0.020085470085470087,3,-14.076666666666666,121.76,6
+Australia_246,Rowley Shoals: Imperieuse Reef Rage area,Australia,0.045670194003527335,3,-17.566666666666666,118.964,15
+Australia_247,Rowley Shoals: Mermaid anchorage dropoff 1.3 area,Australia,0.018592020592020593,3,-17.085,119.63777777777779,18
+Australia_248,Oceanic Shoals: Flinders Shoal Central area,Australia,0,2,-9.88,129.33333333333331,3
+Australia_249,Oceanic Shoals: Cootamundra Shoal area,Australia,0,1,-10.84,129.22,1
+Australia_25,Coral Sea - Far North: Ashmore NE Bommie area,Australia,0.005208333333333333,3,-10.185,144.58375,8
+Australia_250,Oceanic Shoals: Kitan Shoal East area,Australia,0,2,-10.7,126.33500000000001,2
+Australia_251,Oceanic Shoals: Mangola Shoal area,Australia,0.006249999999999999,2,-11.690000000000001,125.065,2
+Australia_252,Oceanic Shoals: Blue Coral Shoal area,Australia,0.005,1,-11.73,123.99,1
+Australia_253,Oceanic Shoals: Parry Shoal area,Australia,0,2,-11.22,129.66,1
+Australia_254,Oceanic Shoals: Halimeda Shoal area,Australia,0,1,-11.51,125.28,1
+Australia_255,Oceanic Shoals: Lynedoch Bank South area,Australia,0,1,-10.03,130.81,3
+Australia_256,Oceanic Shoals: Evans Shoal area,Australia,0,2,-9.89,129.55,1
+Australia_257,Oceanic Shoals: Moss Shoal Central area,Australia,0,3,-11.135000000000002,129.91,2
+Australia_258,Oceanic Shoals: Marie Shoal South area,Australia,0,3,-10.9,130.1,2
+Australia_259,Oceanic Shoals: South Evans Shoal area,Australia,0,1,-10.13,129.54,1
+Australia_26,Coral Sea - Far North: Ashmore Reef NW slope area,Australia,0.0016666666666666666,3,-10.1025,144.4725,4
+Australia_260,Solitary Islands: Pimpernel Rock area,Australia,0,2,-29.7,153.4,1
+Australia_261,Port Stephens: NE North Rock area,Australia,5.347593582887701e-5,11,-32.61666666666667,152.3188888888889,9
+Australia_262,Port Stephens: Halifax Park area,Australia,1.3850415512465385e-5,19,-32.73171428571428,152.17371428571428,35
+Australia_263,Gold Coast: G Spot area,Australia,0,1,-27.94,153.43,1
+Australia_264,Great Sandy: Jew Shoal Pinnacle area,Australia,0,1,-26.355,153.09500000000003,2
+Australia_265,Great Sandy: Barolin Rocks area,Australia,0,2,-24.86,152.485,2
+Australia_266,Great Sandy: Wolf Rock area,Australia,0.0025,2,-25.9,153.18,1
+Australia_267,Rottnest Island: Green Island Reserve 1 area,Australia,0.0018265937696509366,18,-32.00962962962963,115.52111111111111,27
+Australia_268,Solitary Islands: Elbow Cave Mooring N Solitary Is area,Australia,3.348214285714286e-4,8,-29.924,153.38799999999998,5
+Australia_269,Solitary Islands: SW Solitary area,Australia,0.0014886611210140621,11,-30.207857142857144,153.24142857142857,14
+Australia_27,Coral Sea - Far North: Genicanthus Reef area,Australia,0.0012499999999999998,2,-10.2225,144.41,4
+Australia_270,Solitary Islands: Manta Mooring NW Solitary Is area,Australia,0.004043956043956044,13,-30.034444444444443,153.2422222222222,9
+Australia_271,Shoalwater: Point Peron area,Australia,0,11,-32.30666666666667,115.69,9
+Australia_272,Yorke Peninsula: Cape Elizabeth North area,Australia,0,5,-34.185833333333335,137.46833333333333,12
+Australia_273,Yorke Peninsula: Point Souttar area,Australia,0,3,-34.91,137.3,2
+Australia_274,Yorke Peninsula: Wardang area,Australia,0,3,-34.488,137.414,5
+Australia_275,Yorke Peninsula: Corny Point Outside area,Australia,0,4,-34.935,136.98250000000002,4
+Australia_276,Yorke Peninsula: Minlacowie area,Australia,0,1,-34.74,137.47500000000002,2
+Australia_277,Yorke Peninsula: Balgowan area,Australia,0,1,-34.32,137.49,1
+Australia_278,Sydney: Middle Head Sth area,Australia,0,17,-33.85769230769231,151.26,26
+Australia_279,Sydney: Inside North Head area,Australia,5.847953216374273e-5,18,-33.80388888888889,151.285,18
+Australia_28,Coral Sea - Central: Weather Station Inner Reef area,Australia,0.020892857142857144,7,-19.0525,152.3675,4
+Australia_280,Sydney: Bare Island North area,Australia,0,18,-34.00941176470588,151.2135294117647,17
+Australia_281,NSW - Central: Dragon Alley area,Australia,0,3,-33.599999999999994,151.335,2
+Australia_282,West Cape York: Booby Island SW area,Australia,0,4,-10.605,141.9125,4
+Australia_283,Torres Strait: Nagir Islet NW area,Australia,0,2,-10.25,142.475,2
+Australia_284,Torres Strait: The Maze Anchorage area,Australia,8.333333333333333e-4,3,-10.065000000000001,143.86333333333334,6
+Australia_285,Torres Strait: Murray Channel area,Australia,0.0025,3,-9.956666666666667,144.11,6
+Australia_286,Torres Strait: Bourke Islet W area,Australia,0,1,-9.870000000000001,143.54,4
+Australia_287,Torres Strait: Mourilyan Reef area,Australia,0,1,-9.79,142.63,1
+Australia_288,Torres Strait: Half Way Island Boulders area,Australia,0.056666666666666664,1,-10.1,143.31333333333333,3
+Australia_289,Torres Strait: 3/4 Reef area,Australia,0,1,-10.07,143.69,1
+Australia_29,Coral Sea - Central: Lihou Staircase area,Australia,6.666666666666666e-4,4,-17.125714285714285,152.09285714285716,7
+Australia_290,Torres Strait: Seven Reefs east area,Australia,0.0013167189952904238,7,-10.334999999999999,143.71699999999998,10
+Australia_291,Torres Strait: Dugong Island area,Australia,6.249999999999999e-4,4,-10.52,143.09,2
+Australia_292,Torres Strait: Yule Passage area,Australia,0,1,-10.38,143.93,1
+Australia_293,Albany: Cheynes Reef area,Australia,0,3,-35.06727272727273,117.97727272727273,11
+Australia_294,WA - South Coast: Little Boat Harbour (Reef) area,Australia,0,3,-34.43,119.41230769230769,13
+Australia_295,WA - South Coast: Bald Island NW Cove area,Australia,0,2,-34.92333333333333,118.42,3
+Australia_296,Recherche: Investigator Island area,Australia,0,3,-34.07,120.87,2
+Australia_297,Recherche: Modrain Island NW area,Australia,0,3,-34.07666666666667,122.24333333333334,3
+Australia_298,Recherche: Cornwall Island coral area,Australia,0,2,-33.983333333333334,122.55,3
+Australia_299,Recherche: Daw Island bay west area,Australia,0,2,-33.85,124.13333333333333,3
+Australia_3,Christmas Island: Flying Fish Cove Boat Ramp area,Australia,0.02978174603174603,4,-10.445789473684211,105.64473684210526,19
+Australia_30,Coral Sea - South: Quay West Bommie area,Australia,0.5133699633699633,4,-20.98857142857143,154.38071428571428,14
+Australia_300,Abrolhos (WA): Plate Ledge  Pelsart Group area,Australia,0,5,-28.869285714285716,113.99357142857143,14
+Australia_301,WA - South Coast: Cape Knob area,Australia,0,1,-34.5025,119.2675,4
+Australia_302,WA - South Coast: Groper Bluff area,Australia,0,1,-34.47,118.94666666666666,3
+Australia_303,Recherche: Thomas Island area,Australia,0,2,-33.91,121.94,2
+Australia_304,WA - South Coast: Whalebone Point area,Australia,0,2,-34.36666666666667,119.58333333333333,3
+Australia_305,WA - South Coast: Point Ann area,Australia,0,2,-34.165,119.58500000000001,2
+Australia_306,WA - South Coast: Red Island area,Australia,0,2,-34.035,119.78,2
+Australia_307,"WA - South Coast: Seal Island, WA area",Australia,0,1,-33.955,120.12,2
+Australia_308,Shark Bay: Broadhurst Bight area,Australia,0,1,-25.55,113.48,1
+Australia_309,Shark Bay: Ransonnet Rocks area,Australia,2.0801041666666666,4,-26.128333333333334,113.20333333333333,6
+Australia_31,Coral Sea - South: Kenn Reef bommie area,Australia,0.4047902740641711,4,-21.215384615384615,155.76076923076923,13
+Australia_310,Abrolhos (WA): Long I Dive trail bommie area,Australia,0.0764614898989899,4,-28.453333333333333,113.75833333333333,12
+Australia_311,Geographe Bay: Coral Gardens 2 area,Australia,0,6,-33.603750000000005,115.24875,8
+Australia_312,Abrolhos (WA): Anemone lumps  Easter Group area,Australia,0,3,-28.7025,113.80250000000001,12
+Australia_313,Shark Bay: Bernier Island area,Australia,2.265833333333333,2,-24.855,113.1575,4
+Australia_314,Perth Metro: Hall Bank area,Australia,0,3,-32.056363636363635,115.74454545454546,11
+Australia_315,Shark Bay: Cape Cuvier area,Australia,2.6799999999999997,1,-24.22,113.405,2
+Australia_316,Shark Bay: Coral Scrape area,Australia,0,1,-25.73,113.09,1
+Australia_317,Ngari Capes: Scytothalia Slab area,Australia,0,1,-34.52,115.3,1
+Australia_318,WA - South west: Peaceful Bay area,Australia,0,2,-35.04,116.93,2
+Australia_319,WA - South west: Stanley Island area,Australia,0,1,-35.06,117.15,1
+Australia_32,Coral Sea - Central: Lihou Paradise area,Australia,0,1,-17.335,151.695,2
+Australia_320,Recherche: Baynes Rock area,Australia,0,1,-34.05,121.35,1
+Australia_321,Recherche: Boxer Island Channel area,Australia,0,1,-33.99,121.68,3
+Australia_322,Recherche: North Twin Peak Island area,Australia,0,1,-33.99,122.83,1
+Australia_323,Recherche: Middle Island area,Australia,0,1,-34.085,123.21,2
+Australia_324,Bunbury: Temp area,Australia,0,2,-33.403333333333336,115.58333333333333,3
+Australia_325,Bunbury: Bunbury North 1 - Leather Jacket Caves area,Australia,0,2,-33.239999999999995,115.64,2
+Australia_326,WA - central: Two Rocks area,Australia,0.018333333333333333,2,-28.193333333333335,114.24,3
+Australia_327,Shark Bay: Prick Reef area,Australia,0,1,-26.03,113.55,1
+Australia_328,Kimberley: One tree reef S area,Australia,0.0015000000000000002,2,-16.424,123.056,5
+Australia_33,Coral Sea - Central: Mellish Herald Beacon Cay East area,Australia,0.017685185185185182,2,-17.389545454545456,155.85818181818183,22
+Australia_34,Coral Sea - Central: Flora Reef Dropoff area,Australia,0.005,1,-16.755000000000003,147.72500000000002,2
+Australia_35,Coral Sea - South: Bird Lagoon area,Australia,0.9060069597069598,4,-22.180769230769233,155.40692307692308,13
+Australia_36,Coral Sea - South: Hilton Pool area,Australia,0.7395833333333333,3,-22.185000000000002,155.1725,4
+Australia_37,Coral Sea - South: Saumarez egg seasnake area,Australia,0.01783888888888889,5,-21.898333333333333,153.55166666666668,6
+Australia_38,Elizabeth and Middleton Reefs: Lagoon Inner Wreck Middleton Reef area,Australia,0.26746568627450984,3,-29.447916666666668,159.08958333333334,24
+Australia_39,Elizabeth and Middleton Reefs: North Cay Elizabeth Reef area,Australia,0.04789583333333333,3,-29.933333333333334,159.07,18
+Australia_4,Cocos Island: Cabbage Patch area,Australia,7.142857142857144e-4,1,-12.111428571428572,96.84571428571428,7
+Australia_40,Eyre Peninsula: Pearson Island North area,Australia,0,3,-33.95,134.27,6
+Australia_41,Eyre Peninsula: Flinders Island anchorage area,Australia,0,4,-33.696666666666665,134.52,6
+Australia_42,Eyre Peninsula: Greenly Island area,Australia,0,1,-34.64,134.8,1
+Australia_43,SA - Western: South East Slade Point area,Australia,0,1,-33.03125,134.17499999999998,8
+Australia_44,SA - Western: Dreadnaughts area,Australia,0,1,-32.895714285714284,134.08428571428573,7
+Australia_45,SA - Western: Mouth of Baird Bay area,Australia,0,1,-33.18666666666667,134.36333333333334,3
+Australia_46,Eyre Peninsula: Horny Point area,Australia,0,1,-35.01,136.19,1
+Australia_47,Eyre Peninsula: Memory Cove area,Australia,0,1,-34.925,136.0075,4
+Australia_48,Eyre Peninsula: Donnington Rocks area,Australia,0,1,-34.73,135.98,3
+Australia_49,Eyre Peninsula: Langton Island area,Australia,0,1,-34.553333333333335,136.25666666666666,6
+Australia_5,Coral Sea - Central: Paget Cay Bommie area,Australia,0.02463605442176871,7,-19.245,152.294,10
+Australia_50,Eyre Peninsula: Point Sir Isaac area,Australia,0,1,-34.417500000000004,135.275,4
+Australia_51,Eyre Peninsula: Point Drummond area,Australia,0,1,-34.17,135.26,1
+Australia_52,Eyre Peninsula: Waldegrave Island area,Australia,0,1,-33.59,134.76,1
+Australia_53,SA - Western: Cape Bauer area,Australia,0,1,-32.72,134.06,2
+Australia_54,Capricorn-Bunker: Lady Musgrave Lagoon N area,Australia,7.407407407407406e-4,3,-23.874,152.375,10
+Australia_55,GBR - Central: Keeper Reef NW area,Australia,0,1,-18.73,147.27,1
+Australia_56,GBR - Central: Tobias Reef Bommie area,Australia,0.00375,2,-19.1,148.28,2
+Australia_57,GBR - Central: Faith Sundowner area,Australia,0,3,-19.27,148.345,2
+Australia_58,GBR - South: Goulds Reef SW Point area,Australia,0,1,-19.52,148.72333333333333,3
+Australia_59,QLD inshore - South: Middle Percy NW area,Australia,0,4,-21.636666666666667,150.24666666666667,3
+Australia_6,Coral Sea - Central: NE Herald Cay Central area,Australia,0.031249999999999997,3,-16.932857142857145,149.19571428571427,7
+Australia_60,Capricorn-Bunker: Masthead Site 3 area,Australia,0,4,-23.51857142857143,151.75857142857143,7
+Australia_61,GBR - South: 21465 Reef Mid North area,Australia,0,1,-21.79,151.875,2
+Australia_62,GBR - South: Oval Reef area,Australia,0,1,-21.9,152.38,2
+Australia_63,GBR - North: Watsons Bay north area,Australia,0.0027908549783549784,7,-14.68,145.46,19
+Australia_64,GBR - South: AIMS-20104S1 area,Australia,0,3,-19.986666666666668,149.65,3
+Australia_65,QLD inshore - South: Goldsmith anchorage area,Australia,0,3,-20.735714285714288,149.19714285714286,7
+Australia_66,Capricorn-Bunker: Wistari Reef south west area,Australia,0.001111111111111111,3,-23.444444444444443,151.91333333333333,9
+Australia_67,QLD inshore - South: Keswick NW area,Australia,0,2,-20.906666666666666,149.41,3
+Australia_68,GBR - South: Little Stevens anchorage area,Australia,0,1,-20.564999999999998,150.03,2
+Australia_69,Capricorn-Bunker: Tryon Island south area,Australia,0,5,-23.278,151.726,5
+Australia_7,Coral Sea - Central: Lihou west area,Australia,0.0013888888888888887,3,-17.4,151.56,3
+Australia_70,GBR - South: Hydrographers Outer Reef area,Australia,0,1,-20.26,150.49,1
+Australia_71,QLD inshore - South: Blue Pearl Bay area,Australia,0.0013333333333333333,10,-20.069285714285712,148.91357142857143,14
+Australia_72,GBR - South: Little Black Reef anchorage area,Australia,7.5e-4,5,-19.794999999999998,149.4125,4
+Australia_73,QLD inshore - South: Cataren Bay area,Australia,0,3,-20.16,149.04,1
+Australia_74,QLD inshore - South: Horseshoe Bay area,Australia,0,2,-19.98,148.26,1
+Australia_75,QLD inshore - Central: Yongala wreck area,Australia,0,1,-19.3,147.63,1
+Australia_76,QLD inshore - Central: Havannah Island 1 area,Australia,0,1,-18.85,146.54,2
+Australia_77,GBR - Central: Davies Reef 3 area,Australia,0.0029166666666666664,4,-18.84,147.678,5
+Australia_78,GBR - Central: Chicken Reef East area,Australia,0.01,2,-18.675,147.7125,4
+Australia_79,GBR - Central: Grub Reef area,Australia,0.0044444444444444444,3,-18.64,147.41333333333333,3
+Australia_8,Coral Sea - Central: East Diamond Islet Tower area,Australia,0.022091346153846156,4,-17.43285714285714,151.03571428571428,7
+Australia_80,GBR - Central: John Brewer Reef 3 area,Australia,0,1,-18.625,147.08,2
+Australia_81,GBR - Central: Bowl Reef S area,Australia,0.008333333333333333,1,-18.45,147.47666666666666,3
+Australia_82,GBR - Central: Rib Reef 3 area,Australia,0.003125,1,-18.46125,147,8
+Australia_83,GBR - Central: Myrmidon Reef area,Australia,0.015833333333333335,2,-18.266666666666666,147.38,3
+Australia_84,Keppels: Shelving area,Australia,0,5,-23.18,150.96066666666667,15
+Australia_85,QLD inshore - Central: Brook Is NE area,Australia,0,3,-18.14,146.28,1
+Australia_86,QLD inshore - Central: Coombe Is area,Australia,0,3,-18.025,146.18666666666667,6
+Australia_87,GBR - Central: Mooring Bommie area,Australia,0.0024999999999999996,2,-17.715,146.45499999999998,2
+Australia_88,GBR - Central: Nathan Reef Bommie1 area,Australia,0.0016666666666666666,3,-17.5,146.464,5
+Australia_89,QLD inshore - Central: Russell Island area,Australia,0,3,-17.19,146.05,8
+Australia_9,Coral Sea - Central: South Diamond Islet area,Australia,0.002611111111111111,3,-17.68,150.788,5
+Australia_90,QLD inshore - Central: Fitzroy Island Anchorage area,Australia,0.0010476190476190477,7,-16.88142857142857,145.98714285714286,7
+Australia_91,GBR - Central: Petaj Bommie Milln Reef area,Australia,0.005333333333333333,6,-16.795,146.256,10
+Australia_92,GBR - Central: Michaelmis Cay area,Australia,0,5,-16.54,146.02375,8
+Australia_93,GBR - Central: Agincourt Reef - Three Sisters area,Australia,0.0020952380952380953,5,-15.968,145.816,5
+Australia_94,QLD inshore - South: Pine Island1 area,Australia,0,2,-20.38,148.89,2
+Australia_95,"QLD inshore - North: Iris Reef Beacon, Stainer Island area",Australia,0,1,-13.96,143.84,2
+Australia_96,QLD inshore - North: Forbes Island west boulders area,Australia,0.002666666666666667,5,-12.315,143.3975,8
+Australia_97,QLD inshore - North: Moody Reef W area,Australia,0,2,-12.09,143.255,4
+Australia_98,GBR - South: Bait Reef1 area,Australia,0.00225,11,-19.804,149.09799999999998,5
+Australia_99,Capricorn-Bunker: Broomfield Reef Site 3 area,Australia,6.249999999999999e-4,4,-23.21666666666667,151.93,6
+Bahamas_1,Long Island: Deans Blue Hole area,Bahamas,0,1,23.11,284.99,1
+Belize_1,Belize: South Reef area,Belize,0.27336811997526284,7,16.80785714285714,271.9075,28
+Brazil_1,Abrolhos (Brazil): PAB04 area,Brazil,0.09,1,-17.971666666666668,321.32,6
+Brazil_2,Abrolhos (Brazil): PA1 area,Brazil,0.24666666666666667,1,-17.676666666666666,321.02,3
+Brazil_3,Sao Paulo (Brazil): Sao Pedro Reef area,Brazil,0.07499999999999998,1,-23.849999999999998,314.5733333333333,3
+Brazil_4,Sao Paulo (Brazil): Eustacio Reef area,Brazil,0.22500000000000003,1,-23.869999999999997,314.755,2
+Brazil_5,Sao Paulo (Brazil): Buzios Reef area,Brazil,0.665,1,-23.77,314.93,2
+Brazil_6,Sao Paulo (Brazil): Montao de Triago Reef area,Brazil,0.04,1,-23.83,314.255,2
+Brazil_7,Abrolhos (Brazil): TIM2 area,Brazil,0.004999999999999999,1,-17.48,320.97,1
+Cambodia_1,Cambodia: Secret Reef area,Cambodia,0,1,10.628,103.296,5
+Cambodia_2,Cambodia: Condor Reef 2 area,Cambodia,0,1,10.73,102.87,2
+Caribbean Sea_1,San Andres: S2 Serrana area,Caribbean Sea,0.005,1,14.305,279.635,2
+Caribbean Sea_2,San Andres: S10 Serrana area,Caribbean Sea,0.05333333333333333,1,14.4,279.7633333333333,6
+Cayman Islands_1,Central Caribbean: Sailfin Reef area,Cayman Islands,0.014837662337662337,2,19.68,279.92466666666667,15
+Cayman Islands_2,Central Caribbean: Grand Cayman anchorage area,Cayman Islands,0.02,1,19.31,278.61,1
+Chile_1,Chile: ECIM Medio area,Chile,0,1,-33.43125,288.34125,8
+Chile_2,Easter Island (Rapa Nui): South Bay East area,Chile,0.24916666666666668,1,-26.47,254.63875,8
+Chile_3,Easter Island (Rapa Nui): The Moai Easter Island area,Chile,0.013125000000000001,1,-27.134444444444444,250.56666666666666,9
+China_1,Hong Kong: Basalt Island area,China,0,2,22.326249999999998,114.32875,8
+Colombia_1,Seaflower: Coral Nursery area,Colombia,0.17384615384615387,1,13.39090909090909,278.6190909090909,11
+Colombia_2,Seaflower: Wild Life area,Colombia,0.11461538461538462,1,12.572,278.298,5
+Colombia_3,Malpelo: El Arrecife area,Colombia,0,4,4.004545454545455,278.39272727272726,11
+Cook Islands_1,Cook Islands (southern): Aitutaki 1 area,Cook Islands,0.11000000000000001,1,-18.872500000000002,200.2025,4
+Cook Islands_2,Cook Islands (southern): Aroa Marine Reserve area,Cook Islands,0.14,2,-21.22,200.20666666666668,3
+Cook Islands_3,"Cook Islands (southern): Big Passage middle mooring, Palmerston area",Cook Islands,0,1,-18.033333333333335,196.81666666666666,3
+Cook Islands_4,Cook Islands (nothern): South Manta Reef area,Cook Islands,4.166666666666668e-4,1,-13.25,196.8875,12
+Costa Rica_1,Costa Rica: Bahía Guacamaya  Costa Rica area,Costa Rica,0,1,10.565,274.255,2
+Costa Rica_2,Cocos: Bahía Wafer area,Costa Rica,0.0017411083540115797,3,5.539565217391305,272.9395652173913,23
+Costa Rica_3,Costa Rica: Bahía Camaronal area,Costa Rica,0.0013333333333333333,1,9.858571428571429,274.51,7
+Costa Rica_4,Costa Rica: Caletas area,Costa Rica,0.10333333333333337,1,9.81125,274.65875,8
+Costa Rica_5,Costa Rica: Punta San José area,Costa Rica,0.05750000000000001,1,8.66,276.27,2
+Costa Rica_6,Costa Rica: Chorro area,Costa Rica,0.0019999999999999996,1,8.711111111111112,276.12,9
+Costa Rica_7,Costa Rica: Roca Matapalo area,Costa Rica,0,1,8.37,276.71,1
+Dominican Republic_1,Dominican Republic: Coralina area,Dominican Republic,0.06490384615384616,2,18.3575,291.12125,8
+Dominican Republic_2,Dominican Republic: Penon area,Dominican Republic,0.065,2,18.225,291.22,2
+East Timor_1,Timor-Leste: Dili Rock East area,East Timor,0,1,-8.56,125.5,1
+Ecuador_1,Machalilla: Faro Isla de la Plata area,Ecuador,0.25375000000000003,1,-1.272857142857143,278.93857142857144,7
+Ecuador_10,Machalilla: Isla Sombrerito area,Ecuador,0.4475,1,-1.475,279.205,6
+Ecuador_11,Galapagos: Islote Espejo area,Ecuador,0,1,0.2975,269.5525,4
+Ecuador_12,Galapagos: Punta Moreno Pesca (1) area,Ecuador,0,1,-0.705,268.66833333333335,6
+Ecuador_13,Galapagos: Punta Vicente Roca Pesca (1) area,Ecuador,0,1,-0.04666666666666667,268.45666666666665,6
+Ecuador_14,Galapagos: Wolf Colonia de Lobos Norte area,Ecuador,0,1,1.3833333333333333,268.18333333333334,6
+Ecuador_15,Galapagos: Punta Estrada area,Ecuador,0,1,-0.76,269.69,1
+Ecuador_16,Galapagos: Caldwell area,Ecuador,0,1,-1.3250000000000002,269.67999999999995,2
+Ecuador_2,Machalilla: Ahorcado area,Ecuador,4.4879999999999995,1,-1.62,279.14666666666665,3
+Ecuador_3,Galapagos: Arrecife Escondido area,Ecuador,0,1,1.676,268.002,5
+Ecuador_4,Galapagos: Bahía Darwin Pared Este area,Ecuador,0,1,0.31666666666666665,270.03999999999996,6
+Ecuador_5,Galapagos: Bahía Gardner Norte (1) area,Ecuador,0,1,-1.3557142857142859,270.3571428571429,7
+Ecuador_6,Galapagos: Bahía Sullivan area,Ecuador,0,1,-0.26166666666666666,269.43333333333334,6
+Ecuador_7,Galapagos: Cabo Douglas Fondeadero area,Ecuador,0,1,-0.312,268.34200000000004,5
+Ecuador_8,Galapagos: Caleta Tagus Turismo (1) area,Ecuador,0,1,-0.295,268.6121428571428,14
+Ecuador_9,Galapagos: La Botella area,Ecuador,0,2,-1.241,269.576,10
+Egypt_1,Red Sea - Egypt: Habili Ali area,Egypt,0,1,23.41,35.90166666666667,6
+Egypt_2,Red Sea - Egypt: Abu Galawa area,Egypt,0.026666666666666665,1,24.21,35.62,3
+Egypt_3,Red Sea - Egypt: El Sheliniat Reef area,Egypt,0,1,24.73,35.155,2
+Egypt_4,Red Sea - Egypt: Gotta Marsa Alam area,Egypt,0.02,1,25.07,34.94,1
+Egypt_5,Red Sea - Egypt: St Johns Caves area,Egypt,0,1,23.64,35.83,1
+Fiji_1,Fiji: Fuchal area,Fiji,0.021249999999999998,1,-16.792,179.298,5
+Fiji_2,Fiji: Somosomo Island area,Fiji,0.026666666666666665,1,-16.740000000000002,180.04333333333332,3
+Fiji_3,Fiji: Rainbow reef northern tip area,Fiji,0.009999999999999998,1,-16.78333333333333,179.91166666666666,6
+Fiji_4,Fiji: VoliVoli House Reef area,Fiji,0,1,-17.31,181.83,1
+Fiji_5,Fiji: Cakaubalavu Coral Channel area,Fiji,0.0041666666666666675,1,-17.246666666666666,179.385,6
+French Polynesia_1,Society Islands: Papeete Dock area,French Polynesia,0.21500000000000002,1,-17.54,210.42,1
+French Polynesia_10,Tuamotos: Ile Taravai West area,French Polynesia,0,1,-23.1525,224.96249999999998,4
+French Polynesia_11,Tuamotos: Hoa Inside Beacons area,French Polynesia,0.013333333333333332,1,-18.08,218.99666666666667,3
+French Polynesia_12,Tuamotos: Makemo Outside NE2 area,French Polynesia,0.027500000000000004,1,-16.622500000000002,216.4375,4
+French Polynesia_13,Tuamotos: Makemo Outside NW Pass area,French Polynesia,0.01,1,-16.445,216.04,2
+French Polynesia_14,Tuamotos: Tahanea Outside NE2 area,French Polynesia,0.00125,1,-16.852,215.322,5
+French Polynesia_15,Tuamotos: Tahanea Inside NE area,French Polynesia,0,1,-16.85,215.1,1
+French Polynesia_16,Tuamotos: Faaite Passe Teporioha Sth area,French Polynesia,0,1,-16.7,214.64,1
+French Polynesia_17,Tuamotos: Fakarava Sth Cardinal area,French Polynesia,0,1,-16.516666666666666,214.54,3
+French Polynesia_18,Society Islands: Tetiaroa area,French Polynesia,0,1,-17,210.41,1
+French Polynesia_19,Tuamotos: Toau Anse Amyot NE Outside area,French Polynesia,0,1,-15.795,213.85500000000002,2
+French Polynesia_2,Society Islands: Teavapiti Pass Sth area,French Polynesia,0.0024999999999999996,1,-16.744999999999997,208.57750000000001,4
+French Polynesia_20,Society Islands: Huahine Pass area,French Polynesia,0,1,-16.71666666666667,208.98,3
+French Polynesia_21,Tuamotos: Apatiki SE Inside area,French Polynesia,0,1,-15.555,213.76,2
+French Polynesia_22,Marquesas: Hanemoenoa Bay area,French Polynesia,0,1,-9.9,220.91,2
+French Polynesia_23,Marquesas: Baie Hakeaotu area,French Polynesia,0,1,-9.403333333333334,219.87,3
+French Polynesia_24,Marquesas: Baie Haahopu area,French Polynesia,0,1,-8.89,219.79500000000002,2
+French Polynesia_25,Austral Islands: Iles de Maria Channel Entrance S area,French Polynesia,0.061666666666666675,1,-21.801666666666666,205.28166666666667,6
+French Polynesia_3,Society Islands: Motu Pahi (Bora Bora) area,French Polynesia,0,1,-16.44,208.235,2
+French Polynesia_4,Society Islands: Maupihaa Inside area,French Polynesia,0,1,-16.78,206.04,1
+French Polynesia_5,Society Islands: Toau Bommie area,French Polynesia,0.003333333333333333,2,-15.936666666666666,214.10666666666668,6
+French Polynesia_6,Tuamotos: Fakarava Nth Anchorage area,French Polynesia,8.333333333333333e-4,2,-16.075714285714284,214.30142857142857,7
+French Polynesia_7,Society Islands: Moorea Channel area,French Polynesia,0.03633333333333333,2,-17.483999999999998,210.14000000000001,5
+French Polynesia_8,Tuamotos: Tikehau Bommie area,French Polynesia,0,1,-15.01,211.73,1
+French Polynesia_9,Tuamotos: Ile Aukena Bay area,French Polynesia,0.036875000000000005,1,-23.130000000000003,225.12416666666667,12
+Indonesia_1,Aceh: Ujung Rubiah area,Indonesia,0.001619565217391304,2,5.869166666666667,95.28458333333333,24
+Indonesia_10,Bali: Paradise House reef area,Indonesia,2.380952380952381e-4,7,-8.28,115.5925,4
+Indonesia_11,Banda Sea: Turbinaria Slope area,Indonesia,0,1,-4.515714285714285,129.89714285714285,7
+Indonesia_12,Banda Sea: Tanjung Kanari area,Indonesia,0,1,-4.609999999999999,130.05,2
+Indonesia_13,Flores: Pulau Besar Maragajong area,Indonesia,0.0016666666666666666,2,-8.455,122.3325,4
+Indonesia_14,Flores: South Pasar Sari  Gosong Bone Atoll area,Indonesia,0,2,-8.481666666666667,122.48166666666667,6
+Indonesia_15,Raja Ampat: Kaburan area,Indonesia,3.333333333333335e-4,2,-0.5309090909090909,130.68363636363637,22
+Indonesia_16,Raja Ampat: Dugong Hole area,Indonesia,0,2,-0.544,130.529,10
+Indonesia_17,Raja Ampat: Anitas Garden area,Indonesia,0,2,-0.5733333333333334,130.28666666666666,3
+Indonesia_18,Raja Ampat: Wai Reef NE area,Indonesia,0,1,-0.7,130.715,2
+Indonesia_19,Raja Ampat: Pulau Matan area,Indonesia,0,1,-0.96,131.15,1
+Indonesia_2,Aceh: Paloh area,Indonesia,0,1,5.641666666666667,95.14,6
+Indonesia_20,Raja Ampat: Wayag Lagoon area,Indonesia,0,1,0.17,130.01666666666665,3
+Indonesia_21,Raja Ampat: Crocodile Rock area,Indonesia,0,1,-2.012,130.656,5
+Indonesia_22,Raja Ampat: Masenta area,Indonesia,0,1,-1.97,130.48000000000002,2
+Indonesia_23,Raja Ampat: Whale Rock area,Indonesia,0,1,-2.216666666666667,130.58166666666668,6
+Indonesia_24,Banda Sea: Pulau Namwaan West area,Indonesia,0,1,-7.193333333333333,131.38666666666668,3
+Indonesia_25,Banda Sea: Tanjung Nuan area,Indonesia,0,1,-7.48,131.2,2
+Indonesia_26,Banda Sea: Kangaroo area,Indonesia,0,1,-7.88,130.94,1
+Indonesia_27,Banda Sea: Pulau Selaru NE area,Indonesia,0,1,-8.12,131.11,1
+Indonesia_28,Banda Sea: Tanjung Arousu area,Indonesia,0,1,-8.315000000000001,130.76,2
+Indonesia_3,Banda Sea: Amahusu Point area,Indonesia,0.001,1,-3.734,128.12199999999999,5
+Indonesia_4,Banda Sea: Pulau Kasiui SW area,Indonesia,0.0016666666666666666,1,-4.553333333333334,131.70666666666668,3
+Indonesia_5,Banda Sea: Seaweed Farm area,Indonesia,0,1,-5.696666666666666,132.61333333333334,3
+Indonesia_6,Banda Sea: Kai Tanimbar area,Indonesia,0,1,-6.01,132.43,1
+Indonesia_7,Banda Sea: Pulau Tioor NW area,Indonesia,0,1,-4.72,131.73,1
+Indonesia_8,Banda Sea: Pulau-Pulau Kai North area,Indonesia,0.006666666666666666,1,-5.203333333333333,132.00666666666666,3
+Indonesia_9,Banda Sea: Pulau Ubur West area,Indonesia,0,1,-5.58,132.685,2
+Israel_1,Mediterranean (east): Nachlieli area,Israel,0,1,33.072500000000005,35.0925,4
+Israel_2,Mediterranean (east): Haifa Oceanographic Institute area,Israel,0,1,32.835,34.96,2
+Israel_3,Red Sea - Israel: InterUniversity Institute for Marine Science area,Israel,0.062,1,29.47,34.945,4
+Japan_1,Kyushu: Magarizaki  Tomioka  Amakusa area,Japan,0.19083333333333335,2,32.525000000000006,130.035,2
+Japan_2,Okinawa: Minna Island East area,Japan,0.71625,1,26.635714285714286,127.86428571428571,7
+Japan_3,Kyushu: Hirasei  Ushibuka  Amakusa area,Japan,0.17916666666666664,2,32.17666666666667,130.01,3
+Japan_4,Honshu - South: Seto Marine Lab Island area,Japan,1.11375,1,33.692499999999995,135.3375,4
+Japan_5,Okinawa: Cape Maeda area,Japan,0.06,1,26.44,127.77,1
+Maldives_1,Maldives: Feydhoo area,Maldives,0,1,4.25,73.525,2
+Maldives_2,Maldives: Vilamendhoo area,Maldives,0.003333333333333333,1,3.5733333333333333,72.89333333333333,3
+Maldives_3,Maldives: Omadhoo Thila area,Maldives,0,1,3.86,72.94,2
+Maldives_4,Maldives: Kuda Giri area,Maldives,0,1,3.97,73.49,1
+Maldives_5,Maldives: Hafsa Thila area,Maldives,0,1,4.13,72.84,1
+Maldives_6,Maldives: Rahdhigga Thila area,Maldives,0,1,3.7649999999999997,72.73,2
+Maldives_7,Maldives: Maldivaru area,Maldives,0,1,3.59,72.72,1
+Mexico_1,Gulf of California: Punta Pescador East area,Mexico,4.30875,1,28.9325,246.615,4
+Mexico_2,Gulf of California: Los Morros area,Mexico,0.0064705882352941195,1,23.4175,250.58499999999998,8
+Mexico_3,Gulf of California: Tintorera area,Mexico,0,1,24.56,249.59,1
+Mexico_4,Gulf of California: San Gabriel area,Mexico,0,1,24.41,249.665,2
+Mexico_5,Gulf of California: Chileno Bay South area,Mexico,0.006666666666666666,1,22.93,250.18333333333334,3
+Mexico_6,Gulf of California: Little Smith Island Bay area,Mexico,6.63625,1,29.09,246.48250000000002,4
+Mozambique_1,Mozambique: Caldeira2 area,Mozambique,0.042,1,-16.653333333333332,39.72333333333333,3
+NA_1,Cocos Island: Winter Wall area,NA,0,1,-12.09,96.84,1
+NA_2,Vanuatu: Lenafa area,NA,0.1,1,-19.38,169.25,1
+Netherlands Antilles_1,Bonaire: Windsock area,Netherlands Antilles,0.012812500000000001,2,12.07,291.725,8
+Netherlands Antilles_2,Bonaire: 1000 Steps area,Netherlands Antilles,0.09106060606060606,2,12.208333333333334,291.6766666666667,6
+New Caledonia_1,New Caledonia: Abore Bomie Inside area,New Caledonia,0.09633333333333333,3,-22.341666666666665,166.23833333333334,6
+New Caledonia_2,New Caledonia: Aquarium Ile Vert area,New Caledonia,0.10666666666666667,1,-21.663333333333334,165.42000000000002,3
+New Caledonia_3,New Caledonia: Petite U area,New Caledonia,0.04375,2,-22.0175,165.925,4
+New Caledonia_4,New Caledonia: Recif Tabu area,New Caledonia,0.15,1,-22.49,166.45,1
+New Caledonia_5,New Caledonia: Yate Iya area,New Caledonia,0.005,1,-22.17,166.97,1
+New Caledonia_6,New Caledonia: Coral Garden Passe de Uitoe area,New Caledonia,0.02,1,-22.14,166.08,1
+New Caledonia_7,New Caledonia: Baie des Citrons area,New Caledonia,0,1,-22.3,166.44,1
+New Zealand_1,Kermadecs: L'Esperance Rock N area,New Zealand,0,2,-31.355,181.17,2
+New Zealand_2,Kermadecs: Te Konui Pt area,New Zealand,0,3,-29.271,182.099,10
+New Zealand_3,Kermadecs: Curtis Is area,New Zealand,0,2,-30.54,181.43666666666667,3
+New Zealand_4,Kermadecs: Macaulay South area,New Zealand,0,2,-30.235,181.57,4
+New Zealand_5,Northland: Motuhuia I area,New Zealand,0,1,-35.019999999999996,173.94333333333333,6
+New Zealand_6,Three Kings: Three Kings Island ESE area,New Zealand,0,1,-34.15333333333333,172.14499999999998,6
+Nicaragua_1,Nicaragua: Bajo del Tigre area,Nicaragua,0.2088961038961039,2,11.118571428571428,274.20714285714286,7
+Nicaragua_2,Nicaragua: Paloma Sur area,Nicaragua,0.15916666666666668,2,11.224615384615385,274.13461538461536,13
+Nicaragua_3,Nicaragua: La Anciana area,Nicaragua,0.04550000000000001,1,11.364545454545455,273.98636363636365,11
+Nicaragua_4,Nicaragua: CONEJO area,Nicaragua,0,1,11.516666666666666,273.81333333333333,3
+Niue_1,Niue: Limu Pool  Namukulu area,Niue,0,2,-19.07857142857143,190.08285714285714,7
+Panama_1,Bocas Del Toro: Crawl Cay area,Panama,9.977416666666667,5,9.254,277.88599999999997,5
+Panama_10,Las Perlas: Chapera area,Panama,0.0058333333333333345,2,8.5275,281.01,4
+Panama_11,Las Perlas: Punta Galera area,Panama,0.08083333333333333,2,8.66,280.94666666666666,3
+Panama_12,Coiba: Seca North area,Panama,0.010277777777777776,3,7.968,277.964,10
+Panama_13,Coiba: Uva NE area,Panama,0.005348484848484849,4,7.837857142857143,278.225,14
+Panama_14,Coiba: Bahía Damas Sur area,Panama,0,1,7.446666666666666,278.3233333333333,3
+Panama_15,Coiba: Bajo Montuosa Oeste area,Panama,0.24833333333333332,1,7.47,277.75333333333333,3
+Panama_16,Coiba: Bajo Twin Peaks area,Panama,0.05,3,7.535,278.1275,4
+Panama_17,Coiba: Logan Rock area,Panama,0.07100000000000001,3,7.322,278.328,5
+Panama_18,Coiba: Jicarón Noroeste area,Panama,0.06354545454545454,3,7.245,278.19166666666666,6
+Panama_19,Coiba: Piedra Hacha area,Panama,0.0025,3,7.42,278.15999999999997,2
+Panama_2,Bocas Del Toro: STRI Point area,Panama,5.321607142857142,7,9.31,277.7083333333333,12
+Panama_20,Coiba: Ladrones NW area,Panama,0.0075,1,7.87,277.56,2
+Panama_21,Coiba: Isla Tintorera area,Panama,0,1,8.105,277.71500000000003,4
+Panama_22,Panama Pacific: Frailes del Sur area,Panama,0.095,1,7.34,279.86,1
+Panama_3,San Blas: Chichime SW area,Panama,3.6992307692307693,1,9.571666666666667,281.08500000000004,6
+Panama_4,Panama Pacific: Isla Urava SE area,Panama,0,1,8.773333333333333,280.4633333333333,3
+Panama_5,Las Perlas: El Arco area,Panama,0.17093750000000002,2,8.27875,280.90375,8
+Panama_6,Las Perlas: Isla Senora area,Panama,0.15785714285714283,2,8.4175,280.9,4
+Panama_7,Las Perlas: Bahía San Telmo Sth area,Panama,0.01,2,8.23,281.1,1
+Panama_8,Las Perlas: Isla de Monte area,Panama,0.02416666666666667,2,8.4,281.175,6
+Panama_9,Coiba: Coiba coral reef NE area,Panama,0.0033333333333333322,3,7.651538461538462,278.3046153846154,13
+Papua New Guinea_1,New Guinea: Anne Sophie's area,Papua New Guinea,0,1,-5.125,150.18,2
+Papua New Guinea_2,New Guinea: Kabaira House 1 area,Papua New Guinea,0,1,-4.24,152.02,1
+Papua New Guinea_3,New Guinea: Charmaine's Reef area,Papua New Guinea,0,1,-5.2675,150.14249999999998,4
+Pitcairn Islands_1,Pitcairn Islands: Dulcie SW area,Pitcairn Islands,2.6733333333333333,1,-24.67,235.2,2
+Pitcairn Islands_2,Pitcairn Islands: Henderson NW bay area,Pitcairn Islands,0.0125,1,-24.35,231.65,3
+Qatar_1,Qatar: Fasht Al-Udayd area,Qatar,0.35,1,24.765,51.685,2
+Qatar_2,Qatar: Fasht East Halul area,Qatar,0.005,1,25.630000000000003,52.655,2
+Republic of the Marshall Islands_1,Marshall Islands: Ailuk House Reef area,Republic of the Marshall Islands,0,1,10.26142857142857,169.91714285714286,7
+Republic of the Marshall Islands_2,Marshall Islands: Ailuk Lagoon area,Republic of the Marshall Islands,0,1,10.386666666666667,169.91,3
+Republic of the Marshall Islands_3,Marshall Islands: Rongalap Airport area,Republic of the Marshall Islands,0,1,11.165,166.84,6
+Samoa_1,Samoa: Apia Habour Entrance East area,Samoa,0.014333333333333333,2,-13.813333333333334,188.18333333333334,3
+Saudi Arabia_1,Red Sea - Saudi: Al Muwaileh area,Saudi Arabia,0.01,1,27.67,35.44,1
+Saudi Arabia_2,Red Sea - Saudi: Likme area,Saudi Arabia,0.00875,1,22.316,39.058,5
+Saudi Arabia_3,Red Sea - Saudi: Al Mutarbj area,Saudi Arabia,0.03833333333333334,1,22.503333333333334,38.93666666666667,3
+Saudi Arabia_4,Red Sea - Saudi: Al Fahal exposed area,Saudi Arabia,0.014285714285714285,1,22.30666666666667,38.92666666666667,3
+Seychelles_1,Seychelles (inner): Coral Gardens area,Seychelles,0,2,-4.616666666666666,55.405833333333334,12
+Solomon Islands_1,Solomon Islands: NusaTupe area,Solomon Islands,0,1,-8.113333333333333,156.91666666666666,3
+Solomon Islands_2,Solomon Islands: Njari area,Solomon Islands,0,1,-8.02,156.78,2
+South Africa_1,South Africa: Windmill North area,South Africa,0,3,-34.227000000000004,18.473,10
+South Africa_2,South Africa: Beacon Island area,South Africa,0,1,-34.025000000000006,23.465,2
+South Africa_3,South Africa: Rheeders Reef area,South Africa,0,1,-34.02333333333333,23.903333333333332,3
+Spain_1,Canary Islands: El Poris area,Spain,0,3,28.126,-16.457,10
+Spain_10,Canary Islands: Risco Verde area,Spain,0,2,27.91,-15.385000000000002,2
+Spain_11,Canary Islands: Puertito de Güímar area,Spain,0,1,28.252857142857142,-16.392857142857142,7
+Spain_12,Canary Islands: Teno Norte area,Spain,0,1,28.3475,-16.8775,4
+Spain_13,Canary Islands: La Caleta Este area,Spain,0,2,27.776666666666667,-17.906666666666666,3
+Spain_14,Canary Islands: Barranco del Kikere area,Spain,0,2,28.8975,-13.741249999999999,8
+Spain_15,Canary Islands: Puerto Naos area,Spain,0,2,28.503333333333334,-17.871666666666666,6
+Spain_16,Canary Islands: Playa de los Guinchos area,Spain,0,1,28.67,-17.765,4
+Spain_17,Canary Islands: La Restinga West area,Spain,0,2,27.65,-18.003333333333334,9
+Spain_18,Canary Islands: Jover area,Spain,0,2,28.5325,-16.385,4
+Spain_19,Canary Islands: Los Gigantes Puerto area,Spain,0,2,28.222857142857144,-16.832857142857144,7
+Spain_2,Canary Islands: Radazul area,Spain,0,2,28.397777777777776,-16.328888888888887,9
+Spain_20,Canary Islands: Puerto Colón Nat area,Spain,0,2,28.1,-16.7575,4
+Spain_21,Canary Islands: Puerto San Miguel Art area,Spain,0,2,28.025,-16.65,6
+Spain_22,Canary Islands: Puerto de la Cruz offshore area,Spain,0,2,28.4175,-16.5475,4
+Spain_23,Canary Islands: Tapahuga area,Spain,0,1,28.096666666666668,-17.153333333333332,3
+Spain_24,Canary Islands: MOGÁN area,Spain,0,1,27.785,-15.719999999999999,2
+Spain_25,Canary Islands: AGAETE area,Spain,0,1,28.055,-15.765,2
+Spain_3,Canary Islands: ROQUE DEL ESTE area,Spain,0,1,29.28,-13.34,2
+Spain_4,Canary Islands: ALEGRANZA area,Spain,0,1,29.32,-13.522499999999999,4
+Spain_5,Canary Islands: La Lajita area,Spain,0,1,28.18,-14.16,1
+Spain_6,Canary Islands: Punta Jandia area,Spain,0,1,28.07,-14.5,1
+Spain_7,Canary Islands: Pozo Negro area,Spain,0,1,28.32,-13.89,1
+Spain_8,Canary Islands: Valle Gran Rey area,Spain,0,1,28.064999999999998,-17.314999999999998,2
+Spain_9,Canary Islands: Las Teresitas area,Spain,0,1,28.51,-16.18,1
+Tanzania_1,Tanzania: Hulls Rocks area,Tanzania,0.0075000000000000015,1,-10.23375,40.17,8
+Tanzania_2,Tanzania: Chumbe Marine Park central area,Tanzania,7.692307692307692e-4,1,-6.29,39.18666666666667,6
+Tanzania_3,Tanzania: Jambo Reef area,Tanzania,0.06333333333333332,1,-5.785,39.2425,4
+Tanzania_4,Tanzania: Coral Mountain area,Tanzania,0.002666666666666666,1,-5.285,39.593333333333334,6
+Tanzania_5,Tanzania: Mnembe Patch area,Tanzania,0,1,-5.82,39.394999999999996,2
+Tanzania_6,Tanzania: Turtle Prison area,Tanzania,0,1,-6.113333333333333,39.163333333333334,3
+Tanzania_7,Tanzania: MBR Marine Park area,Tanzania,0,1,-10.31,40.39,1
+Tonga_1,Tonga: Niuatoputapu passage west area,Tonga,0.0014285714285714288,2,-15.928571428571429,186.22142857142856,7
+Tonga_10,Tonga: Ha'afeva West Reef area,Tonga,0.12416666666666668,2,-20.031666666666666,185.28,6
+Tonga_11,Tonga: Kao Island South area,Tonga,0.003333333333333333,1,-19.69,184.98,2
+Tonga_12,Tonga: Nukunamo Outer Reef area,Tonga,0.040999999999999995,1,-19.694,185.7,5
+Tonga_2,Tonga: Fanuali area,Tonga,0,1,-18.03,185.67,1
+Tonga_3,Tonga: Uonokuhahaki3 area,Tonga,0.02676470588235294,3,-19.885,185.5475,12
+Tonga_4,Tonga: Kelesia Reef1 area,Tonga,0.002142857142857143,2,-20.5,185.2575,4
+Tonga_5,Tonga: Pangaimotu area,Tonga,0.020000000000000004,2,-21.113333333333333,184.96,3
+Tonga_6,Minerva Reefs: North Minerva Reef North area,Tonga,0.08363636363636365,2,-23.631666666666668,181.07333333333332,6
+Tonga_7,Minerva Reefs: South Minerva Reef west bommie area,Tonga,0.004999999999999999,2,-23.94,180.87,3
+Tonga_8,Tonga: Hunga lagoon Outer area,Tonga,0.013455882352941179,2,-18.715555555555554,185.895,18
+Tonga_9,Tonga: Nomuka Bommie area,Tonga,0.045000000000000005,1,-20.275,185.195,2
+Turks and Caicos Islands_1,Turks and Caicos Islands: Cathedral area,Turks and Caicos Islands,0,1,21.82,287.815,2
+Turks and Caicos Islands_2,Turks and Caicos Islands: G-Spot area,Turks and Caicos Islands,0,1,21.49,287.78,2
+United States_1,Florida Keys: Long Key SE area,United States,0.16275,2,24.626,277.144,5
+United States_10,Florida Keys: Tennessee Deep (7D2) area,United States,0,2,24.8,279.305,4
+United States_11,Florida Keys: Turtle (9P1) area,United States,8.333333333333333e-4,2,25.243333333333332,279.7866666666667,3
+United States_12,Florida Keys: Two Patches (9P5) area,United States,0.2671428571428571,2,24.998571428571427,279.5757142857143,7
+United States_13,Florida Keys: Smith Shoal (2P1) area,United States,0.1925,2,24.72,278.08,1
+United States_14,Florida Keys: Content Keys (3H1) area,United States,0,2,24.8,278.48,2
+United States_15,Florida Keys: Porter Patch (9P3) area,United States,0.015000000000000003,2,25.12666666666667,279.67333333333335,3
+United States_16,Miami - Dade County: Dade County 1 area,United States,0.001,1,25.886,279.904,5
+United States_17,Miami - Dade County: Dade County 4 area,United States,0,1,25.666666666666668,279.9,3
+United States_18,Miami - Palm Beach County: Palm Beach 2 area,United States,0,2,26.7,279.9766666666667,3
+United States_19,Miami - Palm Beach County: Palm Beach 4 area,United States,0,2,26.465,279.955,2
+United States_2,Florida Keys: Windjammer wreck area,United States,0.009583333333333333,2,24.64727272727273,277.0609090909091,11
+United States_20,Hawaii (O'ahu): Ala Moana area,United States,1.9409999999999998,2,21.275,202.20333333333332,6
+United States_21,Hawaii (O'ahu): Pupukea1 area,United States,2.0683333333333334,2,21.646666666666665,201.93666666666667,3
+United States_22,Florida Keys: Lion's Den area,United States,0,1,24.4675,277.8625,12
+United States_23,Florida Keys: Funky Town area,United States,0,1,24.4825,277.65999999999997,4
+United States_24,U.S. Virgin Islands: Brewer's Bay Reef area,United States,0.2792307692307692,1,18.32142857142857,295.0985714285714,7
+United States_25,California (south): La Jolla seacaves area,United States,0,1,32.8425,242.7175,4
+United States_26,California (south): Pt Loma urchin feed line area,United States,0,1,32.666666666666664,242.74,3
+United States_3,Florida Keys: Western Sambo Deep (5D4) area,United States,0.059500000000000004,2,24.492,278.314,5
+United States_4,Florida Keys: Vaca Key Bight FL area,United States,0.055833333333333325,4,24.69,278.998,10
+United States_5,Florida Keys: Looe Reef West FL area,United States,0.073875,4,24.55375,278.5325,8
+United States_6,Florida Keys: Sombrero Light W Shallow (5S1) area,United States,8.749999999999999e-4,4,24.635714285714286,278.8842857142857,7
+United States_7,Florida Keys: Rock Key Shallow (5S5) area,United States,0.001875,2,24.46,278.142,5
+United States_8,Miami - Broward County: Broward County 5 area,United States,0,2,26.275,279.93,2
+United States_9,"Miami - Broward County: Sunrise Blvd, FL area",United States,0.015535714285714285,2,26.133333333333333,279.90555555555557,9
+Vanuatu_1,Vanuatu: Tranquility Reef area,Vanuatu,0.0425,2,-17.6,168.1875,4
+Vanuatu_10,Vanuatu: Million Dollar Point area,Vanuatu,0.047142857142857146,1,-15.525714285714285,167.24857142857144,7
+Vanuatu_11,Vanuatu: Tanna Northwest area,Vanuatu,0.14,1,-19.07,169.25,1
+Vanuatu_2,Vanuatu: Blacksand Slab area,Vanuatu,0.10099999999999999,1,-19.348,169.276,5
+Vanuatu_3,Vanuatu: Aniwa Canyon area,Vanuatu,0.04166666666666668,1,-19.223333333333333,169.6,3
+Vanuatu_4,Vanuatu: Nipmi Lows Point area,Vanuatu,0.19625,1,-18.8125,168.9975,4
+Vanuatu_5,Vanuatu: Pango Point area,Vanuatu,1.38625,1,-17.72,168.265,4
+Vanuatu_6,Vanuatu: Cook Reef East area,Vanuatu,0.0475,1,-17.045,168.27499999999998,2
+Vanuatu_7,Vanuatu: Teterigi Point Rocks area,Vanuatu,0.03,1,-15.3825,168.1275,4
+Vanuatu_8,Vanuatu: Port Resolution Reef area,Vanuatu,0,1,-19.52,169.49,1
+Vanuatu_9,Vanuatu: Nagohune Point area,Vanuatu,1.245,1,-15.272499999999999,167.98,4
+Wallis and Futuna_1,Wallis and Futuna: Matautu Bommie area,Wallis and Futuna,1.492537313432836e-4,1,-13.338571428571429,183.786,35
+Wallis and Futuna_2,Wallis and Futuna: Wallis Point area,Wallis and Futuna,0,1,-13.41,183.57,1
+Wallis and Futuna_3,Wallis and Futuna: Alofi Island area,Wallis and Futuna,0,1,-14.325,181.935,4
